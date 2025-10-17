@@ -1,0 +1,18 @@
+
+ * { box-sizing: border-box; }
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+.imagen {
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

@@ -1,0 +1,37 @@
+    body {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+      gap: 10px;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    header, nav, main, aside, footer {
+      border: 2px solid #333;
+      padding: 10px;
+    }
+    header { grid-area: header; background: #ddd; }
+    nav { grid-area: nav; background: #f4f4f4; }
+    main {
+      grid-area: main;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    article {
+      flex: 1 1 45%;
+      border: 1px solid #555;
+      padding: 10px;
+    }
+    aside {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    footer { 
+        grid-area: footer; 
+        background: #ccc; 
+    }
